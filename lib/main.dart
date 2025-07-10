@@ -5,13 +5,15 @@ void main() {
   final col = Column(
     mainAxisAlignment: MainAxisAlignment.center,
     crossAxisAlignment: CrossAxisAlignment.center,
-    children: const [Text("レモン"), Text("りんご"), Text("ブドウ")],
+    children: [Image.network("https://flutter-image-network.web.app/inu.jpeg")],
   );
+
+  final img = Image.network("https://flutter-image-network.web.app/inu.jpeg");
 
   final row = Row(
     mainAxisAlignment: MainAxisAlignment.center,
     crossAxisAlignment: CrossAxisAlignment.center,
-    children: [col, col, col],
+    children: [img, img, img],
   );
 
   // final col = Row(
